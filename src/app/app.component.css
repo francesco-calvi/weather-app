@@ -1,0 +1,9 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 100px;
+}
+
+.space-between {
+  justify-content: space-between;
+}

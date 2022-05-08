@@ -1,0 +1,23 @@
+<div class="card__bg"></div>
+<section class="card__header">
+    <span><mat-icon> location_on</mat-icon></span>     
+    <span>{{ location.title }}</span>     
+    <span><mat-icon (click)="emitDelete()">delete_outline</mat-icon></span>   
+</section>
+<section class="card__body" *ngIf="selectedDay">
+  <div class="card__body__img">
+    <img src="https://www.metaweather.com/static/img/weather/{{selectedDay.weatherStateAbbr}}.svg" alt="" />
+  </div>
+  <p class="weatherState">{{selectedDay.weatherStateName}}</p>
+</section>
+<section class="card__footer">
+  <ul class="weekInfo">                
+    <weather-info 
+      *ngFor="let day of week" 
+      [woeid]="location.woeid" 
+      [day]="day"
+      (selectDay)="updateSelectedDay($event)"
+      [selectedDay]="selectedDay">
+    </weather-info>     
+  </ul>
+</section>

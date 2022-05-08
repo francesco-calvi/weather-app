@@ -1,0 +1,46 @@
+.card__bg {
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  -moz-filter: blur(2px);
+  -ms-filter: blur(2px);
+  -o-filter: blur(2px);
+  background-color: rgba(225, 234, 240, 0.3);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;  
+  font-size: 20px
+}
+
+.card__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;  
+}
+
+.card__body__img {
+  width: 45%;
+}
+
+.weatherState {
+  text-align: center;
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.weekInfo {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}

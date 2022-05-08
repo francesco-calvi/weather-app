@@ -1,0 +1,19 @@
+form#searchForm {
+  text-align: center; 
+  margin-top: 50px;
+  margin-bottom: 80px; 
+}
+
+form#searchForm > input {
+  width: 40%;
+  font-size: 1.5em;
+  border: none;
+  border-bottom: 2px solid #dedede;
+  outline: none;
+  padding: 8px 5px;
+  background-color: transparent;
+}
+
+form#searchForm > input::placeholder {
+  color: inherit;
+}

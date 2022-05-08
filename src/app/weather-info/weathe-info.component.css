@@ -1,0 +1,19 @@
+.weekInfo__day {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3px 5px;
+  font-size: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.weekInfo__day__img {
+  width: 10%;
+}
+
+.selected, .weekInfo__day:hover {
+  background-color: rgba(255, 255, 255, 0.26);
+}
+
+
